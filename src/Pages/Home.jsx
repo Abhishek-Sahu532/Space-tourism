@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <div className="bg-[url('/src/assets/home/background-home-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
-      <div className="flex justify-around text-white ">
+    <div className="tablet:bg-[url('/src/assets/home/background-home-tablet.jpg')] bg-[url('/src/assets/home/background-home-mobile.jpg')]  laptop:bg-[url('/src/assets/home/background-home-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
+
+    
+      <div className="flex tablet:items-center mobile:items-center justify-around text-white ">
         <div className="w-96 pt-72">
           <h6 className="text-xl  font-relaway uppercase spacing tracking-wider text-white/40">
             So, you want to travel to
@@ -19,11 +22,13 @@ export const Home = () => {
           </p>
         </div>
         <div>
-          <div className="mt-80 flex justify-center items-center w-56 h-56 rounded-full bg-white uppercase">
-            <p className="text-blue-gray-900 text-md tracking-widest">
-              Explore
-            </p>
-          </div>
+          <Link to="/destination">
+            <div className="mt-80 flex justify-center items-center w-56 h-56 rounded-full bg-white uppercase">
+              <p className="text-blue-gray-900 text-md tracking-widest">
+                Explore
+              </p>
+            </div>{" "}
+          </Link>
         </div>
       </div>
     </div>

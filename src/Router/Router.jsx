@@ -4,6 +4,7 @@ import { Home } from "../Pages/Home";
 import { Layout } from "../layout";
 import Destination from "../Pages/Destination";
 import Crew from "../Pages/Crew";
+import Technology from "../Pages/Technology";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
           {
             path: "/crew",
             element: <Crew />,
+          },
+          {
+            path: "/technology",
+            element: <Technology />,
           },
         ],
       },

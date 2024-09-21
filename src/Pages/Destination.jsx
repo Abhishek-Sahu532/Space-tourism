@@ -51,7 +51,6 @@ const Destination = () => {
   const [selectedDestination, setSelectedDestination] = useState(
     destinations[0]
   );
-
   return (
     <div className="bg-[url('/src/assets/destination/background-destination-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
       <div className="header" id="header-section">
