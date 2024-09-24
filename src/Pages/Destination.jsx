@@ -52,18 +52,21 @@ const Destination = () => {
     destinations[0]
   );
   return (
-    <div className="bg-[url('/src/assets/destination/background-destination-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
+    <div className="laptop:bg-[url('/src/assets/destination/background-destination-desktop.jpg')]  tablet:bg-[url('/src/assets/destination/background-destination-tablet.jpg)] bg-[url('/src/assets/destination/background-destination-mobile.jpg')] bg-cover min-h-screen w-full bg-no-repeat">
+
+
       <div className="header" id="header-section">
-        <p className="text-white/40 pt-28 pl-28 uppercase text-xl">
+        <p className="text-white/40 laptop:pt-28 tablet:pt-28  pl-28 uppercase text-xl">
           01 Pick your destination
         </p>
       </div>
 
-      <div className="flex mt-12  justify-evenly gap-3">
+      <div className="flex   laptop:mt-12 laptop:flex-row tablet:flex-col flex-col justify-evenly gap-3">
         <div className="pr-52">
           <img
             src={selectedDestination.images.png}
             alt={selectedDestination.name}
+            className="laptop:w-full"
           />
         </div>
         <div className="text-white/80 p-4">
