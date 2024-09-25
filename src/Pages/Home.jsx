@@ -19,9 +19,10 @@ export const Home = () => {
             world experience!
           </p>
         </div>
+   
         <div>
           <Link to="/destination">
-            <div className="laptop:mt-80 mt-32 flex justify-center items-center laptop:w-56 laptop:h-56 tablet:mt-15 tablet:w-28 tablet:h-28  w-28 h-28 rounded-full bg-white uppercase">
+            <div className="laptop:mt-80 mt-32 flex justify-center items-center laptop:w-56 laptop:h-56 tablet:mt-15 tablet:w-48 tablet:h-48  w-48 h-48 rounded-full bg-white uppercase">
               <p className="text-blue-gray-900 text-sm tracking-widest">
                 Explore
               </p>

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import laptopBG from '../assets/technology/background-technology-desktop.jpg'
+
 
 const Destination = () => {
   const destinations = [
     {
       name: "Moon",
       images: {
-        png: "/src/assets/destination/image-moon.png",
+        png: "assets/destination/image-moon.png",
         webp: "./assets/destination/image-moon.webp",
       },
       description:
@@ -16,7 +18,7 @@ const Destination = () => {
     {
       name: "Mars",
       images: {
-        png: "/src/assets/destination/image-mars.png",
+        png: "assets/destination/image-mars.png",
         webp: "./assets/destination/image-mars.webp",
       },
       description:
@@ -27,7 +29,7 @@ const Destination = () => {
     {
       name: "Europa",
       images: {
-        png: "/src/assets/destination/image-europa.png",
+        png: "assets/destination/image-europa.png",
         webp: "./assets/destination/image-europa.webp",
       },
       description:
@@ -38,7 +40,7 @@ const Destination = () => {
     {
       name: "Titan",
       images: {
-        png: "/src/assets/destination/image-titan.png",
+        png: "assets/destination/image-titan.png",
         webp: "./assets/destination/image-titan.webp",
       },
       description:
@@ -52,21 +54,22 @@ const Destination = () => {
     destinations[0]
   );
   return (
-    <div className="laptop:bg-[url('/src/assets/destination/background-destination-desktop.jpg')]  tablet:bg-[url('/src/assets/destination/background-destination-tablet.jpg)] bg-[url('/src/assets/destination/background-destination-mobile.jpg')] bg-cover min-h-screen w-full bg-no-repeat">
-
-
+    <div className=  "laptop:bg-[url('assets/destination/background-destination-desktop.jpg')]  tablet:bg-[url('/src/assets/destination/background-destination-tablet.jpg)] bg-[url('/src/assets/destination/background-destination-mobile.jpg')] bg-cover min-h-screen w-full bg-no-repeat">
+      
+      
+      
       <div className="header" id="header-section">
-        <p className="text-white/40 laptop:pt-28 tablet:pt-28  pl-28 uppercase text-xl">
+        <p className="text-white/40 laptop:pt-28 tablet:pt-28 pt-28 pl-28 uppercase text-xl">
           01 Pick your destination
         </p>
       </div>
 
-      <div className="flex   laptop:mt-12 laptop:flex-row tablet:flex-col flex-col justify-evenly gap-3">
-        <div className="pr-52">
+      <div className="flex   laptop:mt-12 mt-16 items-center laptop:flex-row tablet:flex-col flex-col justify-evenly gap-3">
+        <div className="laptop:pr-52">
           <img
             src={selectedDestination.images.png}
             alt={selectedDestination.name}
-            className="laptop:w-full"
+            className="laptop:w-full w-60"
           />
         </div>
         <div className="text-white/80 p-4">

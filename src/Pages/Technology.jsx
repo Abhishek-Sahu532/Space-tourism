@@ -30,19 +30,22 @@ const Technology = () => {
         "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
     },
   ];
-
   const [currentTechnology, setCurrentTechnology] = useState(technology[0]);
 
   return (
-    <div className="bg-[url('/src/assets/technology/background-technology-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
+    <div className="laptop:bg-[url('/src/assets/technology/background-technology-desktop.jpg')] tablet:bg-[url('/src/assets/technology/background-technology-tablet.jpg')] bg-[url('/src/assets/technology/background-technology-mobile.jpg')]  bg-cover min-h-screen w-auto bg-no-repeat">
       <div className="header" id="header-section">
         <p className="text-white/40 pt-28 pl-28 uppercase text-xl">
           03 space launch 101
         </p>
       </div>
 
-      <div className="flex flex-grow justify-around font-relaway">
-        <div className="w-2/6  text-white flex mt-8 gap-20">
+
+
+      <div className="flex laptop:flex-row tablet:flex-row flex-col justify-around font-relaway">
+
+
+        <div className="laptop:w-2/6  p-8 text-white flex mt-8 gap-20">
           <div className="flex flex-col gap-8 mt-5">
             <button
               className={`border p-3 px-5 ${
@@ -88,17 +91,17 @@ const Technology = () => {
             <p className="mt-3 text-3xl uppercase font-relaway font-thin tracking-widest">
               {currentTechnology?.name}
             </p>
-            <p className="mt-5 font-relaway tracking-widest text-xs text-balance leading-5">
+            <p className="mt-5 font-relaway tracking-widest text-wrap text-xs leading-5">
               {currentTechnology?.description}
             </p>
           </div>
         </div>
 
-        <div>
+        <div className="mt-6  mx-auto p-3">
           <img
             src={currentTechnology?.images?.portrait}
             alt={currentTechnology?.name}
-            className="w-96 h-96 rounded"
+            className="laptop:w-96 laptop:h-96 rounded"
           />
         </div>
       </div>

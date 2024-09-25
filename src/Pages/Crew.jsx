@@ -42,14 +42,15 @@ const Crew = () => {
 
   const [selectedCrew, setSelectedCrew] = useState(crews[0]);
   return (
-    <div className="bg-[url('/src/assets/crew/background-crew-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
+    <div className="laptop:bg-[url('/src/assets/crew/background-crew-desktop.jpg')] tablet:bg-[url('/src/assets/crew/background-crew-tablet.jpg')] bg-[url('/src/assets/crew/background-crew-mobile.jpg')]  bg-cover min-h-screen w-auto bg-no-repeat">
+
       <div className="header" id="header-section">
         <p className="text-white/40 pt-28 pl-28 uppercase text-xl">
           02 Meet your crew
         </p>
       </div>
 
-      <div className="flex justify-evenly mt-24 font-relaway">
+      <div className="flex flex-col-reverse tablet:flex-row items-center justify-evenly mt-24 font-relaway">
         <div className=" p-20">
           <p className="uppercase text-white/80 text-2xl tracking-wider">
             {selectedCrew?.role}
@@ -61,7 +62,7 @@ const Crew = () => {
             {" "}
             {selectedCrew?.bio}
           </p>
-          <div className="flex gap-2 mt-3 pl-3 fixed bottom-16 left-60">
+          <div className="flex gap-2 laptop:mt-3 mt-12  pl-3 laptop:fixed laptop:bottom-16 laptop:left-60  bottom-8 items-center mx-auto">
             {crews.map((crew) => (
               <button
                 key={crew.name}
@@ -77,7 +78,7 @@ const Crew = () => {
           <img
             src={selectedCrew?.images?.png}
             alt={selectedCrew?.name}
-            className="w-96 h-96"
+            className="laptop:w-96 laptop:h-96 w-64 p-2"
             srcset=""
           />
         </div>
