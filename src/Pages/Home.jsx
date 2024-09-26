@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <div className="tablet:bg-[url('/src/assets/home/background-home-tablet.jpg')] bg-[url('/src/assets/home/background-home-mobile.jpg')]  laptop:bg-[url('/src/assets/home/background-home-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
+    <div className="tablet:bg-[url('/assets/home/background-home-tablet.jpg')] bg-[url('/assets/home/background-home-mobile.jpg')]  laptop:bg-[url('/assets/home/background-home-desktop.jpg')] bg-cover min-h-screen w-auto bg-no-repeat">
+    
       <div className="flex flex-col tablet:items-center items-center tablet:flex-col laptop:flex-row content-between laptop:justify-around text-white ">
         <div className="w-96 desktop:pt-72 pt-36 ">
           <h6 className="laptop:text-xl tablet:text-xl   font-relaway uppercase spacing tracking-wider text-white/40 text-xs">

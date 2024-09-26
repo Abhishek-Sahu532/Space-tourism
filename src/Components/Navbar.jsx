@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/shared/logo.svg";
+import logo from "/assets/shared/logo.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
       {/* mobile menu */}
       <div className="pr-6 laptop:hidden tablet:hidden" >
         <img
-          src="/src/assets/shared/icon-hamburger.svg"
+          src="/assets/shared/icon-hamburger.svg"
           alt="mobile_menu_open" 
           onClick={handleMobileMenuVisibility}
           className="cursor-pointer"
@@ -48,7 +48,7 @@ const Navbar = () => {
       >
         <div>
           <img
-            src="/src/assets/shared/icon-close.svg"
+            src="/assets/shared/icon-close.svg"
             alt="menu_close"
             onClick={handleMobileMenuVisibility}
             className="fixed right-5 top-7 p-5 cursor-pointer"
